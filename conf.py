@@ -956,7 +956,7 @@ COMMENT_SYSTEM_ID = ""
 # WARNING: if a page would conflict with the index file (usually
 #          caused by setting slug to `index`), the PAGE_INDEX
 #          will not be generated for that directory.
-PAGE_INDEX = True
+PAGE_INDEX = False
 # Enable comments on pages (i.e. not posts)?
 COMMENTS_IN_PAGES = True
 # Enable comments on picture gallery pages?
