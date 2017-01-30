@@ -140,18 +140,18 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ("/archive.html", "Archivo"),
-        ("/tags/", "Etiquetas"),
+        ("/categories/", "Etiquetas y categorías"),
         ("/rss.xml", "Canal RSS"),
     ),
 
     "en": (
         ("/en/archive.html", "Archive"),
-        ("/en/tags/", "Tags"),
+        ("/en/categories/", "Tags and categories"),
         ("/en/rss.xml", "RSS feed"),
     ),
     "eu": (
         ("/eu/archive.html", "Artxiboa"),
-        ("/eu/tags/", "Etiketak"),
+        ("/eu/categories/", "Etiketak eta kategoriak"),
         ("/eu/rss.xml", "RSS feed-a"),
     ),
 }
@@ -204,10 +204,10 @@ POSTS = (
     ("posts/*.html", "", "post.tmpl"),
 )
 PAGES = (
-    ("stories/*.rst", "", "story.tmpl"),
-    ("stories/*.txt", "", "story.tmpl"),
-    ("stories/*.md", "", "story.tmpl"),
-    ("stories/*.html", "", "story.tmpl"),
+    ("pages/*.rst", "", "story.tmpl"),
+    ("pages/*.txt", "", "story.tmpl"),
+    ("pages/*.md", "", "story.tmpl"),
+    ("pages/*.html", "", "story.tmpl"),
 )
 
 
@@ -225,7 +225,7 @@ TIMEZONE = "Europe/Paris"
 # If you want to use ISO 8601 (also valid RFC 3339) throughout Nikola
 # (especially in new_post), set this to True.
 # Note that this does not affect DATE_FORMAT.
-FORCE_ISO8601 = False
+FORCE_ISO8601 = True
 
 # Date format used to display post dates. (translatable)
 # (str used by datetime.datetime.strftime)
@@ -301,15 +301,15 @@ COMPILERS = {
 
 # Create by default posts in one file format?
 # Set to False for two-file posts, with separate metadata.
-# ONE_FILE_POSTS = True
+ONE_FILE_POSTS = True
 
 # Use date-based path when creating posts?
 # Can be enabled on a per-post basis with `nikola new_post -d`.
-# NEW_POST_DATE_PATH = False
+NEW_POST_DATE_PATH = True
 
 # What format to use when creating posts with date paths?
 # Default is '%Y/%m/%d', other possibilities include '%Y' or '%Y/%m'.
-# NEW_POST_DATE_PATH_FORMAT = '%Y/%m/%d'
+NEW_POST_DATE_PATH_FORMAT = '%Y/%m/%d'
 
 # If this is set to True, the DEFAULT_LANG version will be displayed for
 # untranslated posts.
@@ -337,7 +337,7 @@ POSTS_SECTIONS = True
 
 # Setting this to False generates a list page instead of an index. Indexes
 # are the default and will apply GENERATE_ATOM if set.
-# POSTS_SECTIONS_ARE_INDEXES = True
+POSTS_SECTIONS_ARE_INDEXES = True
 
 # Each post and section page will have an associated color that can be used
 # to style them with a recognizable color detail across your site. A color
@@ -361,7 +361,7 @@ POSTS_SECTIONS = True
 
 # Sections are determined by their output directory as set in POSTS by default,
 # but can alternatively be determined from file metadata instead.
-# POSTS_SECTION_FROM_META = False
+POSTS_SECTION_FROM_META = True
 
 # Names are determined from the output directory name automatically or the
 # metadata label. Unless overwritten below, names will use title cased and
@@ -390,7 +390,7 @@ POSTS_SECTIONS = True
 # output / TRANSLATION[lang] / TAG_PATH / tag.html (list of posts for a tag)
 # output / TRANSLATION[lang] / TAG_PATH / tag.xml (RSS feed for a tag)
 # (translatable)
-# TAG_PATH = "categories"
+TAG_PATH = "categories"
 
 # By default, the list of tags is stored in
 #     output / TRANSLATION[lang] / TAG_PATH / index.html
@@ -455,14 +455,14 @@ HIDDEN_TAGS = ['mathjax']
 # using a forward slash ('/') to separate paths. Use a backslash ('\') to escape
 # a forward slash or a backslash (i.e. '\//\\' is a path specifying the
 # subcategory called '\' of the top-level category called '/').
-CATEGORY_ALLOW_HIERARCHIES = False
+CATEGORY_ALLOW_HIERARCHIES = True
 # If CATEGORY_OUTPUT_FLAT_HIERARCHY is set to True, the output written to output
 # contains only the name of the leaf category and not the whole path.
 CATEGORY_OUTPUT_FLAT_HIERARCHY = False
 
 # If CATEGORY_PAGES_ARE_INDEXES is set to True, each category's page will contain
 # the posts themselves. If set to False, it will be just a list of links.
-# CATEGORY_PAGES_ARE_INDEXES = False
+CATEGORY_PAGES_ARE_INDEXES = True
 
 # Set descriptions for category pages to make them more interesting. The
 # default is no description. The value is used in the meta description
@@ -489,14 +489,14 @@ HIDDEN_CATEGORIES = []
 
 # If ENABLE_AUTHOR_PAGES is set to True and there is more than one
 # author, author pages are generated.
-# ENABLE_AUTHOR_PAGES = True
+ENABLE_AUTHOR_PAGES = True
 
 # Path to author pages. Final locations are:
 # output / TRANSLATION[lang] / AUTHOR_PATH / index.html (list of authors)
 # output / TRANSLATION[lang] / AUTHOR_PATH / author.html (list of posts by an author)
 # output / TRANSLATION[lang] / AUTHOR_PATH / author.xml (RSS feed for an author)
 # (translatable)
-# AUTHOR_PATH = "authors"
+AUTHOR_PATH = "authors"
 
 # If AUTHOR_PAGES_ARE_INDEXES is set to True, each author's page will contain
 # the posts themselves. If set to False, it will be just a list of links.
@@ -521,7 +521,7 @@ HIDDEN_AUTHORS = ['Guest']
 # Final location for the main blog page and sibling paginated pages is
 # output / TRANSLATION[lang] / INDEX_PATH / index-*.html
 # (translatable)
-# INDEX_PATH = ""
+INDEX_PATH = ""
 
 # Optional HTML that displayed on “main” blog index.html files.
 # May be used for a greeting. (translatable)
@@ -539,7 +539,7 @@ CREATE_FULL_ARCHIVES = True
 # If monthly archives or full archives are created, adds also one archive per day
 # Create previous, up, next navigation links for archives
 CREATE_ARCHIVE_NAVIGATION = True
-CREATE_DAILY_ARCHIVE = True
+CREATE_DAILY_ARCHIVE = False
 # Final locations for the archives are:
 # output / TRANSLATION[lang] / ARCHIVE_PATH / ARCHIVE_FILENAME
 # output / TRANSLATION[lang] / ARCHIVE_PATH / YEAR / index.html
@@ -557,7 +557,7 @@ ARCHIVES_ARE_INDEXES = True
 # rel_path: a relative URL to the current page/post (default)
 # full_path: a URL with the full path from the root
 # absolute: a complete URL (that includes the SITE_URL)
-# URL_TYPE = 'rel_path'
+URL_TYPE = 'full_path'
 
 # If USE_BASE_TAG is True, then all HTML files will include
 # something like <base href=http://foo.var.com/baz/bat> to help
@@ -576,11 +576,11 @@ USE_BASE_TAG = False
 
 # Slug the Tag URL. Easier for users to type, special characters are
 # often removed or replaced as well.
-# SLUG_TAG_PATH = True
+SLUG_TAG_PATH = True
 
 # Slug the Author URL. Easier for users to type, special characters are
 # often removed or replaced as well.
-# SLUG_AUTHOR_PATH = True
+SLUG_AUTHOR_PATH = True
 
 # A list of redirection tuples, [("foo/from.html", "/bar/to.html")].
 #
@@ -628,7 +628,7 @@ OUTPUT_FOLDER = 'public'
 
 # where the "cache" of partial generated content should be located
 # default: 'cache'
-# CACHE_FOLDER = 'cache'
+CACHE_FOLDER = 'cache'
 
 # Filters to apply to the output.
 # A directory where the keys are either: a file extensions, or
@@ -781,7 +781,7 @@ IMAGE_FOLDERS = {'images': 'images'}
 #
 # If the following is True, INDEXES_PAGES is also displayed on the main (the
 # newest) index page (index.html):
-# INDEXES_PAGES_MAIN = False
+INDEXES_PAGES_MAIN = False
 #
 # If the following is True, index-1.html has the oldest posts, index-2.html the
 # second-oldest posts, etc., and index.html has the newest posts. This ensures
@@ -815,7 +815,7 @@ INDEXES_PRETTY_PAGE_URL = ["page", "{number}", "{index_file}"]
 # If the following is true, a page range navigation will be inserted to indices.
 # Please note that this will undo the effect of INDEXES_STATIC, as all index pages
 # must be recreated whenever the number of pages changes.
-SHOW_INDEX_PAGE_NAVIGATION = False
+SHOW_INDEX_PAGE_NAVIGATION = True
 
 # Color scheme to be used for code blocks. If your theme provides
 # "assets/css/code.css" this is ignored. Leave empty to disable.
@@ -909,7 +909,7 @@ src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a>"""
 
 # A small copyright notice for the page footer (in HTML).
 # (translatable)
-CONTENT_FOOTER = 'Contents &copy; {date}         <a href="mailto:{email}">{author}</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         {license}'
+CONTENT_FOOTER = 'Contents &copy; 2016-{date}         <a href="mailto:{email}">{author}</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         {license}'
 
 # Things that will be passed to CONTENT_FOOTER.format().  This is done
 # for translatability, as dicts are not formattable.  Nikola will
@@ -960,12 +960,12 @@ PAGE_INDEX = False
 # Enable comments on pages (i.e. not posts)?
 COMMENTS_IN_PAGES = True
 # Enable comments on picture gallery pages?
-# COMMENTS_IN_GALLERIES = False
+COMMENTS_IN_GALLERIES = False
 
 # What file should be used for directory indexes?
 # Defaults to index.html
 # Common other alternatives: default.html for IIS, index.php
-# INDEX_FILE = "index.html"
+INDEX_FILE = "index.html"
 
 # If a link ends in /index.html,  drop the index.html part.
 # http://mysite/foo/bar/index.html => http://mysite/foo/bar/
@@ -980,7 +980,7 @@ STRIP_INDEXES = True
 # If this is False
 # e.g. /2012 includes only /01, /02, /03, /04, ...: don't add it to the sitemap
 # if /2012 includes any files (including index.html)... add it to the sitemap
-# SITEMAP_INCLUDE_FILELESS_DIRS = True
+SITEMAP_INCLUDE_FILELESS_DIRS = True
 
 # List of files relative to the server root (!) that will be asked to be excluded
 # from indexing and other robotic spidering. * is supported. Will only be effective
@@ -1008,9 +1008,9 @@ DEPLOY_DRAFTS = False
 
 # Allows scheduling of posts using the rule specified here (new_post -s)
 # Specify an iCal Recurrence Rule: http://www.kanzaki.com/docs/ical/rrule.html
-# SCHEDULE_RULE = ''
+SCHEDULE_RULE = 'RRULE:FREQ=WEEKLY;BYDAY=SU;INTERVAL=2;BYHOUR=0;BYMINUTE=0;BYSECOND=0'
 # If True, use the scheduling rule to all posts by default
-# SCHEDULE_ALL = False
+SCHEDULE_ALL = True
 
 # Do you want a add a Mathjax config file?
 # MATHJAX_CONFIG = ""
@@ -1170,7 +1170,7 @@ COPY_SOURCES = True
 # Bootstrap is served from BootstrapCDN (provided by MaxCDN)
 # Set this to False if you want to host your site without requiring access to
 # external resources.
-# USE_CDN = False
+USE_CDN = False
 
 # Check for USE_CDN compatibility.
 # If you are using custom themes, have configured the CSS properly and are
@@ -1228,7 +1228,7 @@ UNSLUGIFY_TITLES = True
 # Nikola supports Open Graph Protocol data for enhancing link sharing and
 # discoverability of your site on Facebook, Google+, and other services.
 # Open Graph is enabled by default.
-# USE_OPEN_GRAPH = True
+USE_OPEN_GRAPH = True
 
 # Nikola supports Twitter Card summaries, but they are disabled by default.
 # They make it possible for you to attach media to Tweets that link
@@ -1252,7 +1252,7 @@ UNSLUGIFY_TITLES = True
 # If webassets is installed, bundle JS and CSS into single files to make
 # site loading faster in a HTTP/1.1 environment but is not recommended for
 # HTTP/2.0 when caching is used. Defaults to True.
-# USE_BUNDLES = True
+USE_BUNDLES = True
 
 # Plugins you don't want to use. Be careful :-)
 # DISABLED_PLUGINS = ["render_galleries"]
