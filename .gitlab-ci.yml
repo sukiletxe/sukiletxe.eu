@@ -2,14 +2,14 @@ image: registry.gitlab.com/paddy-hack/nikola
 
 test:
   script:
-    - pip install babel
+    - pip3 install babel
     - nikola build
   except:
     - master
 
 pages:
   script:
-    - pip install babel
+    - pip3 install babel
     - nikola build
   artifacts:
     paths:
