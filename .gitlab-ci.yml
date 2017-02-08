@@ -2,15 +2,17 @@ image: registry.gitlab.com/paddy-hack/nikola
 
 test:
   script:
-  - nikola build
+    - pip install babel
+    - nikola build
   except:
-  - master
+    - master
 
 pages:
   script:
+    - pip install babel
     - nikola build
   artifacts:
     paths:
-    - public
+      - public
   only:
-  - master
+    - master
