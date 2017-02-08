@@ -237,7 +237,9 @@ DATE_FORMAT ={
 # Date format used to display post dates, if local dates are used. (translatable)
 # (str used by moment.js)
 # JS_DATE_FORMAT = 'YYYY-MM-DD HH:mm'
-
+# DATE_FORMAT used by Babel (see plugins/babeldates.py).
+# (translatable)
+BABEL_DATE_FORMAT = 'full'
 # Date fanciness.
 #
 # 0 = using DATE_FORMAT and TIMEZONE

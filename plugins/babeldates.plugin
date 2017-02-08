@@ -1,0 +1,9 @@
+[Core]
+Name = babeldates
+Module = babeldates
+
+[Documentation]
+Author = Sukil Etxenike
+Version = 0.1
+Website = https://gitlab.com/sukiletxe
+Description = Use Babel to format dates.
