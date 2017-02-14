@@ -1010,7 +1010,7 @@ DEPLOY_DRAFTS = False
 
 # Allows scheduling of posts using the rule specified here (new_post -s)
 # Specify an iCal Recurrence Rule: http://www.kanzaki.com/docs/ical/rrule.html
-SCHEDULE_RULE = 'RRULE:FREQ=WEEKLY;BYDAY=SU;INTERVAL=2;BYHOUR=12;BYMINUTE=0;BYSECOND=0'
+SCHEDULE_RULE = 'RRULE:FREQ=WEEKLY;BYDAY=SU;BYHOUR=12;BYMINUTE=0;BYSECOND=0'
 # If True, use the scheduling rule to all posts by default
 SCHEDULE_ALL = True
 
