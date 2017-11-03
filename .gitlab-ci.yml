@@ -11,6 +11,7 @@ pages:
   script:
     - pip3 install babel
     - nikola build
+    - nikola deploy
   artifacts:
     paths:
       - public

@@ -602,11 +602,11 @@ REDIRECTIONS = []
 # to `nikola deploy`.  If no arguments are specified, a preset
 # named `default` will be executed.  You can use as many presets
 # in a `nikola deploy` command as you like.
-# DEPLOY_COMMANDS = {
-#     'default': [
-#         "rsync -rav --delete output/ joe@my.site:/srv/www/site",
-#     ]
-# }
+DEPLOY_COMMANDS = {
+     'default': [
+'mv output public' # Deploying will happen on Linux
+     ]
+}
 
 # github_deploy configuration
 # For more details, read the manual:
@@ -625,7 +625,7 @@ GITHUB_COMMIT_SOURCE = True
 # Where the output site should be located
 # If you don't use an absolute path, it will be considered as relative
 # to the location of conf.py
-OUTPUT_FOLDER = 'public'
+OUTPUT_FOLDER = 'output'
 
 # where the "cache" of partial generated content should be located
 # default: 'cache'
@@ -998,7 +998,7 @@ PRETTY_URLS = True
 
 # If True, publish future dated posts right away instead of scheduling them.
 # Defaults to False.
-# FUTURE_IS_NOW = False
+FUTURE_IS_NOW = True
 
 # If True, future dated posts are allowed in deployed output
 # Only the individual posts are published/deployed; not in indexes/sitemap
