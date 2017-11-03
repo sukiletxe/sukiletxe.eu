@@ -539,7 +539,7 @@ FRONT_INDEX_HEADER = {
 CREATE_FULL_ARCHIVES = True
 # If monthly archives or full archives are created, adds also one archive per day
 # Create previous, up, next navigation links for archives
-CREATE_ARCHIVE_NAVIGATION = True
+CREATE_ARCHIVE_NAVIGATION = False
 CREATE_DAILY_ARCHIVE = False
 # Final locations for the archives are:
 # output / TRANSLATION[lang] / ARCHIVE_PATH / ARCHIVE_FILENAME
