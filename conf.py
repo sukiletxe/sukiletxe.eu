@@ -91,14 +91,14 @@ BLOG_DESCRIPTION ={
 # in the default language will be shown instead.
 
 # What is the default language?
-DEFAULT_LANG = "es"
+DEFAULT_LANG = "en"
 
 # What other languages do you have?
 # The format is {"translationcode" : "path/to/translation" }
 # the path will be used as a prefix for the generated pages location
 TRANSLATIONS = {
     DEFAULT_LANG: "",
-    "en": "./en",
+    "es": "./es",
     "eu": "./eu",
 }
 
@@ -138,16 +138,15 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 #          else they won’t be highlighted when active.
 
 NAVIGATION_LINKS = {
-    DEFAULT_LANG: (
-        ("/archive.html", "Archivo"),
-        ("/categories/", "Etiquetas y categorías"),
-        ("/rss.xml", "Canal RSS"),
-    ),
-
     "en": (
         ("/en/archive.html", "Archive"),
         ("/en/categories/", "Tags and categories"),
         ("/en/rss.xml", "RSS feed"),
+    ),
+    "es": (
+        ("/archive.html", "Archivo"),
+        ("/categories/", "Etiquetas y categorías"),
+        ("/rss.xml", "Canal RSS"),
     ),
     "eu": (
         ("/eu/archive.html", "Artxiboa"),
@@ -230,9 +229,9 @@ FORCE_ISO8601 = True
 # Date format used to display post dates. (translatable)
 # (str used by datetime.datetime.strftime)
 DATE_FORMAT ={
-    DEFAULT_LANG: '%A, %d de %B de %Y %H:%M',
-    'en': '%A, %B %d %Y %H:%M',
-    'eu': '%A, %Y(e)ko %Bk %d %H:%M',
+    "en": '%A, %B %d %Y %H:%M',
+    "es": '%A, %d de %B de %Y %H:%M',
+    "eu": '%A, %Y(e)ko %Bk %d %H:%M',
 }
 # Date format used to display post dates, if local dates are used. (translatable)
 # (str used by moment.js)
