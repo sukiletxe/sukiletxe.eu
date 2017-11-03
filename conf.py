@@ -139,14 +139,14 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 
 NAVIGATION_LINKS = {
     "en": (
-        ("/en/archive.html", "Archive"),
-        ("/en/categories/", "Tags and categories"),
-        ("/en/rss.xml", "RSS feed"),
+        ("/archive.html", "Archive"),
+        ("/categories/", "Tags and categories"),
+        ("/rss.xml", "RSS feed"),
     ),
     "es": (
-        ("/archive.html", "Archivo"),
-        ("/categories/", "Etiquetas y categorías"),
-        ("/rss.xml", "Canal RSS"),
+        ("/es/archive.html", "Archivo"),
+        ("/es/categories/", "Etiquetas y categorías"),
+        ("/es/rss.xml", "Canal RSS"),
     ),
     "eu": (
         ("/eu/archive.html", "Artxiboa"),
@@ -552,7 +552,7 @@ CREATE_DAILY_ARCHIVE = False
 # If ARCHIVES_ARE_INDEXES is set to True, each archive page which contains a list
 # of posts will contain the posts themselves. If set to False, it will be just a
 # list of links.
-ARCHIVES_ARE_INDEXES = True
+ARCHIVES_ARE_INDEXES = False
 
 # URLs to other posts/pages can take 3 forms:
 # rel_path: a relative URL to the current page/post (default)
