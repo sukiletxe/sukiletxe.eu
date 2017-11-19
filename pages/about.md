@@ -18,6 +18,7 @@ Hello, I am Sukil Etxenike, the author of  this blog. I am from Navarre. I am st
 
 ## Contact
 My handle is @sukiletxe almost everywhere, except in places where I use @sukil. You can contact me via: 
+
 * [Twitter][tw]
 * [E-mail][email]
 * [GitHub][gh]

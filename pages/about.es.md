@@ -18,6 +18,7 @@ Hola, soy Sukil Etxenike, el autor de este blog. Soy de Navarra. Estudio Estudio
 
 ## Contacto
 Mi nombre de usuario es @sukiletxe casi en todos los sitios, salvo en  aquellos en los que uso @sukil. Puedes contactarme por: 
+
 * [Twitter][tw]
 * [E-mail][email]
 * [GitHub][gh]

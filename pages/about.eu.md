@@ -18,6 +18,7 @@ Kaixo, Sukil Etxenike naiz, blog honen egilea. Nafarra naiz. Ingles Ikasketetako
 
 ## Kontaktua
 Nire erabiltzaile izena @sukiletxe da ia beti, @sukil erabiltzen ez dudan tokietan izan ezik. Harremanetarako bide hauek dituzu:
+
 * [Twitter][tw]
 * [E-mail][email]
 * [GitHub][gh]
