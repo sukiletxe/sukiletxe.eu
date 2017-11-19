@@ -142,16 +142,19 @@ NAVIGATION_LINKS = {
         ("/archive.html", "Archive"),
         ("/categories/", "Tags and categories"),
         ("/rss.xml", "RSS feed"),
+        ("/about", "About me"),
     ),
     "es": (
         ("/es/archive.html", "Archivo"),
         ("/es/categories/", "Etiquetas y categorías"),
         ("/es/rss.xml", "Canal RSS"),
+        ("/es/about", "Sobre mí"),
     ),
     "eu": (
         ("/eu/archive.html", "Artxiboa"),
         ("/eu/categories/", "Etiketak eta kategoriak"),
         ("/eu/rss.xml", "RSS feed-a"),
+        ("/eu/about", "Niri buruz"),
     ),
 }
 
