@@ -320,7 +320,7 @@ NEW_POST_DATE_PATH_FORMAT = '%Y/%m/%d'
 # If this is set to False, then posts that are not translated to a language
 # LANG will not be visible at all in the pages in that language.
 # Formerly known as HIDE_UNTRANSLATED_POSTS (inverse)
-SHOW_UNTRANSLATED_POSTS = False
+SHOW_UNTRANSLATED_POSTS = True
 
 # Nikola supports logo display.  If you have one, you can put the URL here.
 # Final output is <img src="LOGO_URL" id="logo" alt="BLOG_TITLE">.
