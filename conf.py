@@ -200,15 +200,15 @@ THEME_COLOR = '#5670d4'
 #     )
 
 POSTS = (
+    ("posts/*.md", "", "post.tmpl"),
     ("posts/*.rst", "", "post.tmpl"),
     ("posts/*.txt", "", "post.tmpl"),
-    ("posts/*.md", "", "post.tmpl"),
     ("posts/*.html", "", "post.tmpl"),
 )
 PAGES = (
+    ("pages/*.md", "", "story.tmpl"),
     ("pages/*.rst", "", "story.tmpl"),
     ("pages/*.txt", "", "story.tmpl"),
-    ("pages/*.md", "", "story.tmpl"),
     ("pages/*.html", "", "story.tmpl"),
 )
 
