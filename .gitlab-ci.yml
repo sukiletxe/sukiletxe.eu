@@ -10,7 +10,7 @@ test:
 pages:
   script:
     - pip3 install babel
-    - nikola build
+    - nikola build -a
     - nikola deploy
   artifacts:
     paths:
