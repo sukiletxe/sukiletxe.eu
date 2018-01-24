@@ -606,7 +606,7 @@ REDIRECTIONS = []
 # named `default` will be executed.  You can use as many presets
 # in a `nikola deploy` command as you like.
 DEPLOY_COMMANDS = {
-     'default': [
+     'gitlab': [
 'mv output public' # Deploying will happen on Linux
      ]
 }
@@ -819,7 +819,7 @@ INDEXES_PRETTY_PAGE_URL = ["page", "{number}", "{index_file}"]
 # If the following is true, a page range navigation will be inserted to indices.
 # Please note that this will undo the effect of INDEXES_STATIC, as all index pages
 # must be recreated whenever the number of pages changes.
-SHOW_INDEX_PAGE_NAVIGATION = True
+SHOW_INDEX_PAGE_NAVIGATION = False
 
 # Color scheme to be used for code blocks. If your theme provides
 # "assets/css/code.css" this is ignored. Leave empty to disable.
