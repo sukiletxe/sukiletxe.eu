@@ -1080,7 +1080,6 @@ MARKDOWN_EXTENSIONS = ['fenced_code', 'codehilite', 'extra']
 # the default right now)
 # (translatable)
 SOCIAL_BUTTONS_CODE = """
-<div class="addthis_sharing_toolbox"></div>
 """
 
 # Show link to source for the posts?
@@ -1193,19 +1192,6 @@ EXTRA_HEAD_DATA = """
 # in the default template (base.tmpl).
 # (translatable)
 BODY_END = """
-<!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56519c8e4bd6f653"></script>
-<!-- Twitter extra configuration -->
-<script type="text/javascript">
-var addthis_share = addthis_share || {}
-addthis_share = {
-	passthrough : {
-		twitter: {
-			via: "sukiletxe",
-		}
-	}
-}
-</script>
 """
 
 # The possibility to extract metadata from the filename by using a
