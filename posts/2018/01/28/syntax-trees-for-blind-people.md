@@ -27,7 +27,7 @@ I don't use them because trees can get really complex. I don't know if linguists
 
 ## Other systems
 
-Of course, the possibilities are endless. If these systems don't convince you, and if you reach an agreement with your instructor (or your student), you may invent a system of your own. Also, if you are a better programmer than me, you may use something like [nested dictionaries in YAML][YAML][^1] or the Natural Language ToolKit][NLTK].
+Of course, the possibilities are endless. If these systems don't convince you, and if you reach an agreement with your instructor (or your student), you may invent a system of your own. Also, if you are a better programmer than me, you may use something like [nested dictionaries in YAML][YAML][^1] or the [Natural Language ToolKit][NLTK].
 
 [YAML]: http://www.yaml.org/spec/1.2/spec.html
 [NLTK]: http://nltk.org
