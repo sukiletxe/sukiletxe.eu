@@ -1,13 +1,11 @@
 image: registry.gitlab.com/paddy-hack/nikola
+before_script: pip3 install babel
 build:
   stage: build
-  script:
-    - pip3 install babel
-    - nikola build -a
+  script: nikola build -a
 pages:
   stage: deploy
-  script:
-    - nikola deploy gitlab
+  script: nikola deploy gitlab
   only:
     - master
   artifacts:
