@@ -4,6 +4,9 @@ before_script:
 build:
   stage: build
   script: nikola build -a
+  artifacts:
+    paths:
+      - output
 pages:
   stage: deploy
   script: nikola deploy gitlab
