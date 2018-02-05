@@ -263,7 +263,7 @@ BABEL_DATE_FORMAT = 'full'
 # LOCALE_DEFAULT = locale to use for languages not mentioned in LOCALES; if
 # not set the default Nikola mapping is used.
 
-# LOCALES = {}
+LOCALES = {}
 # LOCALE_FALLBACK = None
 # LOCALE_DEFAULT = None
 
