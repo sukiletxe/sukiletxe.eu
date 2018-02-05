@@ -205,10 +205,10 @@ POSTS = (
     ("posts/*.html", "", "post.tmpl"),
 )
 PAGES = (
-    ("pages/*.md", "", "page.tml"),
-    ("pages/*.rst", "", "page.tml"),
-    ("pages/*.txt", "", "page.tml"),
-    ("pages/*.html", "", "page.tml"),
+    ("pages/*.md", "", "page.tmpl"),
+    ("pages/*.rst", "", "page.tmpl"),
+    ("pages/*.txt", "", "page.tmpl"),
+    ("pages/*.html", "", "page.tmpl"),
 )
 
 
@@ -381,7 +381,7 @@ POSTS_SECTIONS = True
 
 # Sections are determined by their output directory as set in POSTS by default,
 # but can alternatively be determined from file metadata instead.
-# POSTS_SECTION_FROM_META = True
+POSTS_SECTION_FROM_META = True
 
 # Names are determined from the output directory name automatically or the
 # metadata label. Unless overwritten below, names will use title cased and
