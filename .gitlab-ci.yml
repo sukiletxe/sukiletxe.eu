@@ -1,5 +1,6 @@
 image: registry.gitlab.com/paddy-hack/nikola
-before_script: pip3 install babel
+before_script:
+  - pip3 install babel
 build:
   stage: build
   script: nikola build -a
