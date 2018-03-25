@@ -142,18 +142,21 @@ NAVIGATION_LINKS = {
         ("/categories/", "Tags and categories"),
         ("/rss.xml", "RSS feed"),
         ("/about", "About me"),
+        ("https://github.com/sukiletxe/sukiletxe.eu", "Blog's source code"),
     ),
     "es": (
         ("/es/archive.html", "Archivo"),
         ("/es/categories/", "Etiquetas y categorías"),
         ("/es/rss.xml", "Canal RSS"),
         ("/es/about", "Sobre mí"),
+        ("https://github.com/sukiletxe/sukiletxe.eu", "Código fuente del blog"),
     ),
     "eu": (
         ("/eu/archive.html", "Artxiboa"),
         ("/eu/categories/", "Etiketak eta kategoriak"),
         ("/eu/rss.xml", "RSS feed-a"),
         ("/eu/about", "Niri buruz"),
+        ("https://github.com/sukiletxe/sukiletxe.eu", "Blogaren iturburu kodea"),
     ),
 }
 
