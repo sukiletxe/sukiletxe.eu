@@ -19,7 +19,7 @@ Hace unos meses, cuando mi disco externo de ~640 GB (~598 GiB) dejó de funciona
 Pero seamos más específicos sobre estas "cosas". Pueden ser:
 
 * Enlaces directos y páginas web (estas últimas pueden ser descargadas como html o pdf)
-* Vídeos y archivos de varios servicios de almacenamiento (gratis y de pago) ([lista de sitios soportados)]
+* Vídeos y archivos de varios servicios de almacenamiento (gratis y de pago) ([lista de sitios soportados])
 * Archivos torrent y enlaces magnet
 * Archivos .nzb
 [lista de sitios soportados]: https://offcloud.com/#/sites
