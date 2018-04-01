@@ -17,6 +17,7 @@ Hace unos meses, cuando mi disco externo de ~640 GB (~598 GiB) dejó de funciona
 * Descargar cosas a uno de tus servicios de nubes de almacenamiento (Dropbox, Onedrive, Google Drive...) o a través de ftp o WebDAV (*"Remote upload"*).
 
 Pero seamos más específicos sobre estas "cosas". Pueden ser:
+
 * Enlaces directos y páginas web (estas últimas pueden ser descargadas como html o pdf)
 * Vídeos y archivos de varios servicios de almacenamiento (gratis y de pago) ([lista de sitios soportados)]
 * Archivos torrent y enlaces magnet
@@ -32,6 +33,7 @@ Bueno, esto es genial. Puedo subir archivos a mi nube, a una velocidad mucho may
 ## Rclone
 
 [Rclone] te permite gestionar tus servicios en la nube sin necesidad de sincronizarlos ni abrir un navegador. Esto incluye:
+
 * Transferir archivos y carpetas entre nubes, o entre carpetas de la misma nube;
 * Transferir archivos y carpetas entre tu equipo (y los dispositivos conectados a él) y la nube;
 * Renombrar y borrar archivos de la nube sin descargar nada; y

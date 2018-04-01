@@ -23,6 +23,7 @@ A couple of months ago, as my ~640GB (~598 GiB) external drive stopped working, 
 * Download things to one of your storage cloud services (Dropbox, Onedrive, Google Drive...) or through FTP or WebDAV ("Remote upload").
 
 But wait, let's be more specific about these "things". These include:
+
 * Direct links and webpages (webpages can be downloaded as html or pdf)
 * Videos and files from several cloud storage services (both free and paid) ([list of supported sites])
 * Torrent files and magnet links
@@ -38,6 +39,7 @@ So, this is great. Now I can upload things directly to my cloud, at a much faste
 ## Rclone
 
 [Rclone] lets you manage your cloud services without needing to synchronize them to your hard drive, or to open a browser. This includes:
+
 * Transferring files and folders between cloud services, or between a service's directories;
 * Transferring files and folders between your computer (or any device connected to it) and the cloud;
 * Renaming and deleting files from the cloud without downloading anything; and
