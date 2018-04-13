@@ -14,7 +14,7 @@ class BabelDates(ConfigPlugin):
 
     def set_site(self, site):
         self.site = site
-        if self.site.config['DATE_FANCINESS'] == 0 and not self.site.config['BABEL_DATE_FORMAT'] is None:
+        if self.site.config['DATE_FANCINESS'] == 0 and not self.site.config.get('BABEL_DATE_FORMAT') is None:
             babel_date_format = utils.TranslatableSetting('BABEL_DATE_FORMAT', self.site.config['BABEL_DATE_FORMAT'], self.site.config['TRANSLATIONS'])
             for lang in self.site.config['TRANSLATIONS']:
                 try:
