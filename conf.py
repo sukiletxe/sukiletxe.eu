@@ -656,11 +656,7 @@ REDIRECTIONS = []
 # to `nikola deploy`.  If no arguments are specified, a preset
 # named `default` will be executed.  You can use as many presets
 # in a `nikola deploy` command as you like.
-DEPLOY_COMMANDS = {
-     'gitlab': [
-'mv output public' # Deploying will happen on Linux
-     ]
-}
+DEPLOY_COMMANDS = {}
 
 # github_deploy configuration
 # For more details, read the manual:
