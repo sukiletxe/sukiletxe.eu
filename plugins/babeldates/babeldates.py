@@ -25,9 +25,6 @@ class BabelDates(ConfigPlugin):
         super(BabelDates, self).set_site(site)
 
     def babel_date_formatter(self, date_format, date, lang):
-        if date_format == 'webiso':
-            # Copied from Nikola
-            return date.replace(microsecond=0).isoformat().replace('+00:00', 'Z')
         if platform.system() == 'Windows':
             norm_locale = locale.normalize(lang).split('.')[0]
         else:
