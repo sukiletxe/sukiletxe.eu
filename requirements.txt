@@ -1,2 +1,2 @@
-nikola[extras] <8.0.0
+nikola[extras] ==8.0.0b2
 
