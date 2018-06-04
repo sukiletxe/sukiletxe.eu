@@ -268,7 +268,7 @@ DATE_FORMAT ={
 
 # Date format used to display post dates, if local dates are used. (translatable)
 # (str used by moment.js)
-# JS_DATE_FORMAT = 'YYYY-MM-DD HH:mm'
+JS_DATE_FORMAT ='LLLL'
 # DATE_FORMAT used by Babel (see plugins/babeldates.py).
 # (translatable)
 BABEL_DATE_FORMAT = 'full'
@@ -280,7 +280,7 @@ BABEL_DATE_FORMAT = 'full'
 # 2 = using a string like “2 days ago”
 #
 # Your theme must support it, Bootstrap already does.
-# DATE_FANCINESS = 0
+DATE_FANCINESS = 1
 
 # While Nikola can select a sensible locale for each language,
 # sometimes explicit control can come handy.
