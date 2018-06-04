@@ -4,4 +4,5 @@ MESSAGES = {
     "Website": "Sitio web",
     "Enter your comment here": "Escribe tu comentario aquí",
     "Submit comment": "Envía tu comentario",
+    "Anonimous": "Anónimo",
 }

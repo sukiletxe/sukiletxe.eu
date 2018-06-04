@@ -4,4 +4,5 @@ MESSAGES = {
     "Website": "Webgunea",
     "Enter your comment here": "Idatzi hemen zure iruzkina",
     "Submit comment": "Iruzkina bidali",
+    "Anonimous": "Izengabea",
 }
