@@ -1,0 +1,47 @@
+## -*- coding: utf-8 -*-
+
+<%def name="comment_form(url, title, identifier)">
+    <ol id="staticman-thread">
+        % for k in sorted(global_data.keys(), reverse = True):
+            % if identifier in k:
+                <li class="comment">
+                    <div class="comment-author">
+                        % if global_data[k].get('author_url') is not None:
+                            <a href="${global_data[k]['author_url']} rel="external nofollow">${global_data[k].get('author', 'Anonimous')|h}</a>
+                        % else:
+                            ${global_data[k].get('author', 'anonimous')|h}
+                        % endif
+                    </div>
+                    <span>&ndash;</span>
+                    <div class="comment-date dt-published"> <time datetime=${global_data[k].get('date')}>${global_data[k].get('date')}</time></div>
+
+                    <div class="comment-text">${global_data[k].get('content')}</div>
+                </li>
+            % endif
+        % endfor
+    </ol>
+
+    <h2>${messages("Post a comment")}</h2>
+    <form method="post" action="https://api.staticman.net/v2/entry/sukiletxe/sukiletxe.eu">
+        <input name="options[slug]" type="hidden" value="${identifier}">
+        <label for="name">${messages('Name')}</label>
+        <input name="fields[author]" type="text" id="name">
+        <label for="url">${messages('Website')}</label>
+        <input name="fields[author_url]" type="url" id="url">
+        <label for="text">${messages('Enter your comment here')}</label>
+        <textarea name="fields[content]" id="text"></textarea>
+        <button type="Submit">${messages('Submit comment')}</button>
+    </form>
+</%def>
+
+<%def name="comment_link(link, identifier)">
+    <a href="${link}#staticman-thread">Comments</a>
+</%def>
+
+<%def name="comment_link_script()">
+    <script>
+        comments_length = document.getElementById('staticman-thread').children.length;
+        comments_header = document.getElementsByClassName('comments')[0].getElementsByTagName('h2')[0];
+        comments_header.innerHTML += " (" + comments_length + ")";
+    </script>
+</%def>

@@ -1,0 +1,10 @@
+allowedFields: ["author", "author_url", "content"]
+branch: "master"
+commitMessage: "Add new comment"
+filename: "{options.slug}-{@timestamp}"
+format: "yml"
+generatedFields:
+    date: "{@date:YYYY-MM-DD HH:mm:ss[Z]}"
+moderation: true
+path: "data"
+requiredFields: ["content"]
