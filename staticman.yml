@@ -4,7 +4,7 @@ commitMessage: "Add new comment"
 filename: "{options.slug}-{@timestamp}"
 format: "yml"
 generatedFields:
-    date: "{@date:YYYY-MM-DD HH:mm:ss[Z]}"
+    date: {@date:YYYY-MM-DD HH:mm:ss[Z]}
 moderation: true
 path: "data"
 requiredFields: ["content"]

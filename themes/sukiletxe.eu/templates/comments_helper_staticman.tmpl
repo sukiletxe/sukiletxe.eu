@@ -6,10 +6,16 @@
             % if identifier in k:
                 <li class="comment">
                     <div class="comment-author">
-                        % if global_data[k].get('author_url') is not None:
-                            <a href="${global_data[k]['author_url']} rel="external nofollow">${global_data[k].get('author', 'Anonimous')|h}</a>
+                        % if not global_data[k].get('author_url', '') == '':
+                            <a href="${global_data[k]['author_url']}" rel="external nofollow">
+                        % endif
+                        % if not global_data[k].get('author', '') == '':
+                            ${global_data[k]['author']}
                         % else:
-                            ${global_data[k].get('author', 'anonimous')|h}
+                            ${messages('Anonimous')}
+                        % endif
+                        % if not global_data[k].get('author_url', '') == '':
+                            </a>
                         % endif
                     </div>
                     <span>&ndash;</span>
