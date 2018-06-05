@@ -5,22 +5,25 @@
         % for k in sorted(global_data.keys(), reverse = True):
             % if identifier in k:
                 <li class="comment">
-                    <div class="comment-author">
-                        % if not global_data[k].get('author_url', '') == '':
-                            <a href="${global_data[k]['author_url']}" rel="external nofollow">
-                        % endif
-                        % if not global_data[k].get('author', '') == '':
-                            ${global_data[k]['author']}
-                        % else:
-                            ${messages('Anonimous')}
-                        % endif
-                        % if not global_data[k].get('author_url', '') == '':
-                            </a>
-                        % endif
+                    <div class = "comment-header">
+                        <span class="comment-author">
+                            <b>
+                                % if not global_data[k].get('author_url', '') == '':
+                                    <a href="${global_data[k]['author_url']}" rel="external nofollow">
+                                % endif
+                                % if not global_data[k].get('author', '') == '':
+                                    ${global_data[k]['author']}
+                                % else:
+                                    ${messages('Anonimous')}
+                                % endif
+                                % if not global_data[k].get('author_url', '') == '':
+                                    </a>
+                                % endif
+                            </b>
+                        </span>
+                        <span>&ndash;</span>
+                        <span class="comment-date dt-published"> <time datetime=${global_data[k].get('date')}>${global_data[k].get('date')}</time></span>
                     </div>
-                    <span>&ndash;</span>
-                    <div class="comment-date dt-published"> <time datetime=${global_data[k].get('date')}>${global_data[k].get('date')}</time></div>
-
                     <div class="comment-text">${global_data[k].get('content')}</div>
                 </li>
             % endif
