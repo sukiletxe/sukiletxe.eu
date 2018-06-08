@@ -2,7 +2,7 @@
 .. title: Syntax trees for blind people
 .. slug: syntax-trees-for-blind-people
 .. date: 2018-01-28 12:00:00+01:00
-.. tags: linguistics,accessibility,office,excel
+.. tags: linguistics, accessibility, office, excel
 .. category: 
 .. link: 
 .. description: 
@@ -35,4 +35,4 @@ Of course, the possibilities are endless. If these systems don't convince you, a
 
 ## Conclusion
 
-I hope you have found this post helpful and informative. If you have any comments, send my an email or contact me through Twitter. At the time of writing, I haven't added the possibility to post comments yet, but if it's available when you read this, and if you prefer a more public comunication, post a comment. Also, contact me if you have any doubts, and I'll try to answer your questions. Thanks for reading!
+I hope you have found this post helpful and informative. If you have any comments, send me an e-mail or contact me through Twitter. At the time of writing, I haven't added the possibility to post comments yet, but if it's available when you read this, and if you prefer a more public comunication, post a comment. Also, contact me if you have any doubts, and I'll try to answer your questions. Thanks for reading!
