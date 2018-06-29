@@ -1,6 +1,6 @@
 output/
 __pycache__/
-cache/
+/cache/
 .doit.*
 public/
 plugins/tags
