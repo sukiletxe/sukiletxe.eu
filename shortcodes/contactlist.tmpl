@@ -1,0 +1,5 @@
+<ul>
+    % for way in sorted(global_data['contact'].keys(), key = lambda p: global_data['contact'][p]['priority']):
+        <li><a href="${global_data['contact'][way]['link']}" rel="me">${way}</a></li>
+    % endfor
+</ul>

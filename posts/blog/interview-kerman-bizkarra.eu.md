@@ -1,6 +1,6 @@
 <!--
 .. title: Elkarrizketa Kerman Bizkarrari
-.. slug: elkarrizketa-kerman-bizkarrari
+.. slug: interview-kerman-bizkarra
 .. date: 2017-11-26 12:00:00+01:00
 .. tags: interview
 .. category: 

@@ -138,24 +138,57 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 
 NAVIGATION_LINKS = {
     "en": (
-        ("/archive.html", "Archive"),
-        ("/categories/", "Tags and categories"),
-        ("/rss.xml", "RSS feed"),
-        ("/about", "About me"),
+        ((
+            ("/micro/", "Main page"),
+            ("/micro/archive/",  "Archive"),
+            ("/micro.xml", "RSS feed"),
+        ), "Micro-posts"),
+        ((
+            ("/blog/", "Main page"),
+            ("/blog/archive/",  "Archive"),
+            ("/blog.xml", "RSS feed"),
+        ), "Long posts"),
+        ((
+            ("/archive/", "Archive"),
+            ("/rss.xml", "RSS feed"),
+            ("/tags/", "Tags"),
+        ), "Entire blog"),
         ("https://github.com/sukiletxe/sukiletxe.eu", "Blog's source code"),
     ),
     "es": (
-        ("/es/archive.html", "Archivo"),
-        ("/es/categories/", "Etiquetas y categorías"),
-        ("/es/rss.xml", "Canal RSS"),
-        ("/es/about", "Sobre mí"),
+        ((
+            ("/es/micro/", "Página principal"),
+            ("/es/micro/archive/",  "Archivo"),
+            ("/micro.xml", "Fuente RSS"),
+        ), "Publicaciones cortas"),
+        ((
+            ("/blog/", "Página principal"),
+            ("/blog/archive/",  "Archivo"),
+            ("/blog.xml", "Fuente RSS"),
+        ), "Publicaciones largas"),
+        ((
+            ("/archive/", "Archivo"),
+            ("/rss.xml", "Fuente RSS"),
+            ("/tags/", "Etiquetas"),
+        ), "Todo el blog"),
         ("https://github.com/sukiletxe/sukiletxe.eu", "Código fuente del blog"),
     ),
     "eu": (
-        ("/eu/archive.html", "Artxiboa"),
-        ("/eu/categories/", "Etiketak eta kategoriak"),
-        ("/eu/rss.xml", "RSS feed-a"),
-        ("/eu/about", "Niri buruz"),
+        ((
+            ("/micro/", "Orri nagusia"),
+            ("/micro/archive/",  "Artxiboa"),
+            ("/micro.xml", "RSS jarioa"),
+        ), "Mikro-argitalpenak"),
+        ((
+            ("/blog/", "Orri nagusia"),
+            ("/blog/archive/",  "Artxiboa"),
+            ("/blog.xml", "RSS jarioa"),
+        ), "Argitalpen luzeak"),
+        ((
+            ("/archive/", "Archiboa"),
+            ("/rss.xml", "RSS jarioa"),
+            ("/tags/", "Etiketak"),
+        ), "Blog osoa"),
         ("https://github.com/sukiletxe/sukiletxe.eu", "Blogaren iturburu kodea"),
     ),
 }
@@ -381,7 +414,7 @@ WRITE_TAG_CLOUD = False
 # output / TRANSLATION[lang] / TAG_PATH / tag.html (list of posts for a tag)
 # output / TRANSLATION[lang] / TAG_PATH / tag RSS_EXTENSION (RSS feed for a tag)
 # (translatable)
-# TAG_PATH = "categories"
+TAG_PATH = "tags"
 
 # By default, the list of tags is stored in
 #     output / TRANSLATION[lang] / TAG_PATH / index.html
@@ -443,8 +476,8 @@ HIDDEN_TAGS = ['mathjax']
 # output / TRANSLATION[lang] / CATEGORY_PATH / CATEGORY_PREFIX category.html (list of posts for a category)
 # output / TRANSLATION[lang] / CATEGORY_PATH / CATEGORY_PREFIX category RSS_EXTENSION (RSS feed for a category)
 # (translatable)
-# CATEGORY_PATH = "categories"
-# CATEGORY_PREFIX = "cat_"
+CATEGORY_PATH = ""
+CATEGORY_PREFIX = ""
 
 # By default, the list of categories is stored in
 #     output / TRANSLATION[lang] / CATEGORY_PATH / index.html
@@ -452,7 +485,7 @@ HIDDEN_TAGS = ['mathjax']
 #     output / TRANSLATION[lang] / CATEGORIES_INDEX_PATH
 # with an arbitrary relative path CATEGORIES_INDEX_PATH.
 # (translatable)
-# CATEGORIES_INDEX_PATH = "categories.html"
+CATEGORIES_INDEX_PATH = "categories/index.html"
 
 # If CATEGORY_ALLOW_HIERARCHIES is set to True, categories can be organized in
 # hierarchies. For a post, the whole path in the hierarchy must be specified,
@@ -486,6 +519,19 @@ CATEGORY_PAGES_ARE_INDEXES = True
 #    },
 # }
 
+CATEGORY_TITLES = {
+    "en":{
+        "micro": "Micro-posts",
+        "blog": "Long posts",},
+    "es":{
+        "micro": "Publicaciones cortas",
+        "blog": "Publicaciones largas",},
+    "eu":{
+        "micro": "Argitalpen laburrak",
+        "blog": "Argitalpen luzeak",
+    }
+}
+
 # If you do not want to display a category publicly, you can mark it as hidden.
 # The category will not be displayed on the category list page.
 # Category pages will still be generated.
@@ -504,16 +550,16 @@ HIDDEN_CATEGORIES = []
 # If no category is specified in a post, the destination path of the post
 # can be used in its place. This replaces the sections feature. Using
 # category hierarchies is recommended.
-# CATEGORY_DESTPATH_AS_DEFAULT = False
+CATEGORY_DESTPATH_AS_DEFAULT = True
 
 # If True, the prefix will be trimmed from the category name, eg. if the
 # POSTS destination is "foo/bar", and the path is "foo/bar/baz/quux",
 # the category will be "baz/quux" (or "baz" if only the first directory is considered).
 # Note that prefixes coming from translations are always ignored.
-# CATEGORY_DESTPATH_TRIM_PREFIX = False
+CATEGORY_DESTPATH_TRIM_PREFIX = False
 
 # If True, only the first directory of a path will be used.
-# CATEGORY_DESTPATH_FIRST_DIRECTORY_ONLY = True
+CATEGORY_DESTPATH_FIRST_DIRECTORY_ONLY = True
 
 # Map paths to prettier category names. (translatable)
 # CATEGORY_DESTPATH_NAMES = {
@@ -577,10 +623,10 @@ FRONT_INDEX_HEADER = {
 # Create per-month archives instead of per-year
 # CREATE_MONTHLY_ARCHIVE = False
 # Create one large archive instead of per-year
-# CREATE_SINGLE_ARCHIVE = False
+CREATE_SINGLE_ARCHIVE = True
 # Create year, month, and day archives each with a (long) list of posts
 # (overrides both CREATE_MONTHLY_ARCHIVE and CREATE_SINGLE_ARCHIVE)
-CREATE_FULL_ARCHIVES = True
+CREATE_FULL_ARCHIVES = False
 # If monthly archives or full archives are created, adds also one archive per day
 # CREATE_DAILY_ARCHIVE = False
 # Create previous, up, next navigation links for archives
@@ -590,8 +636,8 @@ CREATE_FULL_ARCHIVES = True
 # output / TRANSLATION[lang] / ARCHIVE_PATH / YEAR / index.html
 # output / TRANSLATION[lang] / ARCHIVE_PATH / YEAR / MONTH / index.html
 # output / TRANSLATION[lang] / ARCHIVE_PATH / YEAR / MONTH / DAY / index.html
-# ARCHIVE_PATH = ""
-# ARCHIVE_FILENAME = "archive.html"
+ARCHIVE_PATH = "archive"
+ARCHIVE_FILENAME = "index.html"
 
 # If ARCHIVES_ARE_INDEXES is set to True, each archive page which contains a list
 # of posts will contain the posts themselves. If set to False, it will be just a
@@ -643,7 +689,23 @@ ATOM_FILENAME_BASE = "feed"
 # relative URL.
 #
 # If you don't need any of these, just set to []
-REDIRECTIONS = []
+REDIRECTIONS = [
+    ("2017/11/19/welcome/index.html", "/blog/welcome/"),
+    ("es/2017/11/19/welcome/index.html", "/es/blog/welcome/"),
+    ("eu/2017/11/19/welcome/index.html", "/eu/blog/welcome/"),
+    ("2017/11/26/elkarrizketa-kerman-bizkarrari/index.html", "/blog/interview-kerman-bizkarra/"),
+    ("es/2017/11/26/elkarrizketa-kerman-bizkarrari/index.html", "/es/blog/interview-kerman-bizkarra/"),
+    ("eu/2017/11/26/elkarrizketa-kerman-bizkarrari/index.html", "/blog/interview-kerman-bizkarra/"),
+    ("2018/01/28/syntax-trees-for-blind-people/index.html", "/blog/syntax-trees-for-blind-people/"),
+    ("es/2018/01/28/syntax-trees-for-blind-people/index.html", "/es/blog/syntax-trees-for-blind-people/"),
+    ("eu/2018/01/28/syntax-trees-for-blind-people/index.html", "/eu/blog/syntax-trees-for-blind-people/"),
+    ("2018/04/01/review-offcloud-rclone/index.html", "/blog/review-offcloud-rclone/"),
+    ("es/2018/04/01/resena-offcloud-rclone/index.html", "/es/blog/review-offcloud-rclone/"),
+    ("eu/2018/04/01/review-offcloud-rclone/index.html", "/eu/blog/review-offcloud-rclone/"),
+    ("2018/06/05/phonetic-symbols-part-1-reading/index.html", "/blog/phonetic-symbols-part-1-reading/"),
+    ("es/2018/06/05/phonetic-symbols-part-1-reading/index.html", "/es/blog/phonetic-symbols-part-1-reading/"),
+    ("eu/2018/06/05/phonetic-symbols-part-1-reading/index.html", "/eu/blog/phonetic-symbols-part-1-reading/"),
+]
 
 # Presets of commands to execute to deploy. Can be anything, for
 # example, you may use rsync:
@@ -952,7 +1014,7 @@ src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a>"""
 
 # A small copyright notice for the page footer (in HTML).
 # (translatable)
-CONTENT_FOOTER = 'Contents &copy; 2017-{date}         <a href="mailto:{email}">{author}</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         {license}'
+CONTENT_FOOTER = 'Contents &copy; 2017-{date}         <a rel="me" href="mailto:{email}">{author}</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         {license}'
 
 # Things that will be passed to CONTENT_FOOTER.format().  This is done
 # for translatability, as dicts are not formattable.  Nikola will
@@ -1301,7 +1363,7 @@ BODY_END = """
 
 # Special settings to disable only parts of the indexes plugin.
 # Use with care.
-# DISABLE_INDEXES = False
+DISABLE_INDEXES = True
 # DISABLE_MAIN_ATOM_FEED = False
 # DISABLE_MAIN_RSS_FEED = False
 

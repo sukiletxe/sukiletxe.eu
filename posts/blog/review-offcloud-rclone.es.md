@@ -1,6 +1,5 @@
 <!--
 .. title: Reseña de Offcloud y Rclone
-.. slug: resena-offcloud-rclone
 -->
 
 ## Introducción
