@@ -292,19 +292,14 @@ TIMEZONE = "Europe/Paris"
 FORCE_ISO8601 = True
 
 # Date format used to display post dates. (translatable)
-# (str used by datetime.datetime.strftime)
-DATE_FORMAT ={
-    "en": '%A, %B %d %Y %H:%M',
-    "es": '%A, %d de %B de %Y %H:%M',
-    "eu": '%A, %Y(e)ko %Bk %d %H:%M',
-}
+# Used by babel.dates, CLDR style: http://cldr.unicode.org/translation/date-time
+# You can also use 'full', 'long', 'medium', or 'short'
+DATE_FORMAT = 'full'
 
 # Date format used to display post dates, if local dates are used. (translatable)
 # (str used by moment.js)
+# Used by moment.js: https://momentjs.com/docs/#/displaying/format/
 JS_DATE_FORMAT ='LLLL'
-# DATE_FORMAT used by Babel (see plugins/babeldates.py).
-# (translatable)
-BABEL_DATE_FORMAT = 'full'
 
 # Date fanciness.
 #
@@ -315,21 +310,10 @@ BABEL_DATE_FORMAT = 'full'
 # Your theme must support it, Bootstrap already does.
 DATE_FANCINESS = 1
 
-# While Nikola can select a sensible locale for each language,
-# sometimes explicit control can come handy.
-# In this file we express locales in the string form that
-# python's locales will accept in your OS, by example
-# "en_US.utf8" in Unix-like OS, "English_United States" in Windows.
-# LOCALES = dict mapping language --> explicit locale for the languages
-# in TRANSLATIONS. You can omit one or more keys.
-# LOCALE_FALLBACK = locale to use when an explicit locale is unavailable
-# LOCALE_DEFAULT = locale to use for languages not mentioned in LOCALES; if
-# not set the default Nikola mapping is used.
-
-LOCALES = {}
-# LOCALE_FALLBACK = None
-# LOCALE_DEFAULT = None
-
+# Customize the locale/region used for a language.
+# For example, to use British instead of US English: LOCALES = {'en': 'en_GB'}
+# LOCALES = {}
+ 
 # One or more folders containing files to be copied as-is into the output.
 # The format is a dictionary of {source: relative destination}.
 # Default is:
@@ -382,7 +366,7 @@ COMPILERS = {
 # Use date-based path when creating posts?
 # Can be enabled on a per-post basis with `nikola new_post -d`.
 # The setting is ignored when creating pages.
-NEW_POST_DATE_PATH = True
+NEW_POST_DATE_PATH = False
 
 # What format to use when creating posts with date paths?
 # Default is '%Y/%m/%d', other possibilities include '%Y' or '%Y/%m'.
@@ -717,7 +701,9 @@ REDIRECTIONS = [
 # to `nikola deploy`.  If no arguments are specified, a preset
 # named `default` will be executed.  You can use as many presets
 # in a `nikola deploy` command as you like.
-DEPLOY_COMMANDS = {}
+DEPLOY_COMMANDS = {
+    'default': [],
+}
 
 # github_deploy configuration
 # For more details, read the manual:
@@ -1331,6 +1317,7 @@ BODY_END = """
 #         "tags": str.lower  # nikola: force lowercase 'tags' (input would be string)
 #      }
 # }
+
 # Additional metadata that is added to a post when creating a new_post
 # ADDITIONAL_METADATA = {}
 
