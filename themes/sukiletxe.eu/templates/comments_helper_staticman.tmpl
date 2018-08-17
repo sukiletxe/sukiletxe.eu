@@ -2,7 +2,7 @@
 
 <%def name="comment_form(url, title, identifier)">
     <ol id="staticman-thread">
-        % for k in sorted(global_data.keys(), reverse = True):
+        % for k in sorted(global_data.keys()):
             % if identifier in k:
                 <li class="comment">
                     <div class = "comment-header">
