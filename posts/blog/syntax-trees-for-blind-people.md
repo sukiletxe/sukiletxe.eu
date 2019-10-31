@@ -9,8 +9,6 @@
 .. type: text
 -->
 
-## Introduction
-
 As I study English Philology, I have to take a course called English Grammar. In this course, I need, among other things, to analise sentences, and make syntax trees of them. Yes, those trees where you disect a sentence into phrases. But how do I, a completely blind person, do it? Images and arrows are inaccessible for me, and [the Arboreal and ArborWin fonts][arborwin], although I haven't tested them, seem to be inaccessible too. Here, I'll show the method I use.
 
 [Arborwin]: https://www.cascadilla.com/arboreal.html

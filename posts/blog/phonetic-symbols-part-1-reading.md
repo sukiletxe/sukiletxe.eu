@@ -9,8 +9,6 @@
 .. type: text
 -->
 
-
-
 As an English Studies student, I've taken several courses which dealt with phonetics (Spoken English, English Phonetics, English Phonology, and some others). In these courses, I had to read and write IPA symbols. This series focuses on this topic. I will explain the alternatives and tools blind people have, along with their advantages and inconvenients. Our first part deals with reading the symbols. So, let's get started!
 
 ## Speech synthesizers
