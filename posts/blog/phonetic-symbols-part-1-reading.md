@@ -9,7 +9,7 @@
 .. type: text
 -->
 
-## Intro
+
 
 As an English Studies student, I've taken several courses which dealt with phonetics (Spoken English, English Phonetics, English Phonology, and some others). In these courses, I had to read and write IPA symbols. This series focuses on this topic. I will explain the alternatives and tools blind people have, along with their advantages and inconvenients. Our first part deals with reading the symbols. So, let's get started!
 
@@ -37,12 +37,16 @@ Regarding NVDA, I know that there exists a way to convert JBT files into NVDA co
 
 ## Actually finding the symbols
 
-[Wikipedia] is a great resource for IPA. It contains descriptions of all symbols, with sample sound files. However, their IPA chart is not accessible regarding vowels, as it is not put in a table. This is also the case with the [official IPA chart]. [This chart  includes an accessible version][wipachart], with a link to a pdf with the Unicode values associated with the symbols (disclaimer: I made the accessible chart, based on the regular one). [This is another resource for IPA and Unicode numbers][Wells].
+The [official IPA chart] in pdf isn't really accessible. [Wikipedia] is a better resource for IPA. It contains descriptions of all symbols, with sample sound files. [Here is a pdf with the Unicode values associated with the symbols][unipdf]. [This is another resource for IPA and Unicode numbers][Wells]. These two files are intended to help in writing the symbols (or at least that's what I use them for).
+
+I made [an accessible version of the 2005 update of the IPA chart][wipachart2], based off of [a less accessible one][wipachart].
 
 [Wikipedia]: https://en.wikipedia.org/wiki/International_Phonetic_Alphabet
 [official IPA chart]: https://www.internationalphoneticassociation.org/content/full-ipa-chart
 [wipachart]: https://westonruter.github.io/ipa-chart/
+[wipachart2]: https://westonruter.github.io/ipa-chart/accessiblechart.html
 [Wells]: https://www.phon.ucl.ac.uk/home/wells/ipa-unicode.htm
+[unipdf]: https://www.internationalphoneticassociation.org/sites/default/files/phonsymbol.pdf
 
 ## When all of this fails
 
@@ -53,3 +57,7 @@ When all of this fails, things are out of your control. Pdf files are famous for
 ---
 
 And we've reached the end of today's post. I hope you've enjoyed it. If you have comments or questions, just drop them here, or contact me. Thanks for reading!
+
+## Updates
+
+* 2019-10-31: Reorganize "how to find the symbols" heading. Remove claim that Wikipedia is not accessible (which isnot true anymore).
