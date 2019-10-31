@@ -13,7 +13,7 @@
 
 As I study English Philology, I have to take a course called English Grammar. In this course, I need, among other things, to analise sentences, and make syntax trees of them. Yes, those trees where you disect a sentence into phrases. But how do I, a completely blind person, do it? Images and arrows are inaccessible for me, and [the Arboreal and ArborWin fonts][arborwin], although I haven't tested them, seem to be inaccessible too. Here, I'll show the method I use.
 
-[Arborwin]: http://www.cascadilla.com/arboreal.html
+[Arborwin]: https://www.cascadilla.com/arboreal.html
 
 ## How I do it
 
@@ -29,8 +29,8 @@ I don't use them because trees can get really complex. I don't know if linguists
 
 Of course, the possibilities are endless. If these systems don't convince you, and if you reach an agreement with your instructor (or your student), you may invent a system of your own. Also, if you are a better programmer than me, you may use something like [nested dictionaries in YAML][YAML][^1] or the [Natural Language ToolKit][NLTK].
 
-[YAML]: http://www.yaml.org/spec/1.2/spec.html
-[NLTK]: http://nltk.org
+[YAML]: https://yaml.org/spec/1.2/spec.html
+[NLTK]: https://www.nltk.org
 [^1]: I used YAML (although without any programming involved), and although it worked, I found it too space-consumming.
 
 ## Conclusion

@@ -24,8 +24,8 @@ I have no experience with other synthesizers or opeating systems. In Linux, I as
 
 Despite what I said above, if you still want to use your preferred synthesizer (Eloquence, SAPI, etc.) and the IPA symbols are not supported, you could make your preferred screen reader  interpret these symbols for you (at least in Windows), by using a dictionary or a symbol table. I've found two guides for JAWS, which include already made symbol tables ([\[1\]][l1], [\[2\]][l2]). I don't use JAWS regularly, so I don't know how well they work, or how updated they are for new (or old) JAWS versions. 
 
-[l1]: http://accessibility.psu.edu/foreignlanguages/jawssymbols/
-[l2]: http://www.ruf.rice.edu/~reng/jaws-ipa.html
+[l1]: https://accessibility.psu.edu/foreignlanguages/jawssymbols/
+[l2]: https://www.ruf.rice.edu/~reng/jaws-ipa.html
 
 ## Braille
 
@@ -41,8 +41,8 @@ Regarding NVDA, I know that there exists a way to convert JBT files into NVDA co
 
 [Wikipedia]: https://en.wikipedia.org/wiki/International_Phonetic_Alphabet
 [official IPA chart]: https://www.internationalphoneticassociation.org/content/full-ipa-chart
-[wipachart]: https://westonruter.github.io/ipa-chart
-[Wells]: http://www.phon.ucl.ac.uk/home/wells/ipa-unicode.htm
+[wipachart]: https://westonruter.github.io/ipa-chart/
+[Wells]: https://www.phon.ucl.ac.uk/home/wells/ipa-unicode.htm
 
 ## When all of this fails
 

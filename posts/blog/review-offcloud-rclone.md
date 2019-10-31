@@ -1,4 +1,3 @@
-[(
 <!--
 .. title: Review of Offcloud and Rclone
 .. slug: review-offcloud-rclone
@@ -13,7 +12,7 @@
 ## Introduction
 
 A couple of months ago, as my ~640GB (~598 GiB) external drive stopped working, I decided to buy some space in the cloud. After several days of investigation, I decided to purchase the premium package on [Onedrive] (1TiB for 69€/year). After doing this, soon I realised that an external drive was better because of my internet speed (I have a ~3Mb download speed and ~1Mb upload speed). But, seeing as my external drive had stopped working because I dropped it to the floor by accident, I didn't want to buy one. So, what were my options? Was there a service which allowed me to download things directly to the cloud?
-[Onedrive]: https://onedrive.com
+[Onedrive]: https://onedrive.live.com
 
 ## Offcloud
 
@@ -48,7 +47,7 @@ So, this is great. Now I can upload things directly to my cloud, at a much faste
 
 It lets you apply filters for managing files or folders, so you don't need to remember long names (I use them exclusively for this), or to filter based on other criteria. It is used from the command line, and it's available for Windows, Linux and Mac. And it's free and open source.
 
-[Rclone]: http://rclone.org
+[Rclone]: https://rclone.org/
 
 ## Conclusion
 

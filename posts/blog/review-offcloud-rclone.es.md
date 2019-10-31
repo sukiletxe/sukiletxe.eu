@@ -5,7 +5,7 @@
 ## Introducción
 
 Hace unos meses, cuando mi disco externo de ~640 GB (~598 GiB) dejó de funcionar, decidí comprar  almacenamiento en la nube. Después de investigar por varios días, decidí comprar el servicio premium de [Onedrive] (1TiB por 69€/año). Tras hacer esto, pronto me di cuenta de que un disco externo me venía mejor por mi velocidad de Internet (tengo ~3Mb de bajada y ~1Mb de subida). Pero ya que mi disco externo dejó de funcionar porque se me cayó alsuelo, no quería comprarme otro. Entonces, ¿qué opciones tenía? ¿Había un servicio para descargarme cosas  directamente a la nube?
-[Onedrive]: https://onedrive.com
+[Onedrive]: https://onedrive.live.com
 
 ## Offcloud
 
@@ -40,7 +40,7 @@ Bueno, esto es genial. Puedo subir archivos a mi nube, a una velocidad mucho may
 
 Te permite aplicar filtros para gestionar archivos y carpetas, así que no te hace falta recordar nombres de carpetas y archivos largos (yo los uso solamente para esto) , o para filtrar basándote en otros criterios. Se usa por línea de órdenes, y está disponible para Windows, Linux y Mac. Y es libre y de código abierto.
 
-[Rclone]: http://rclone.org
+[Rclone]: https://rclone.org/
 
 ## Conclusión
 
