@@ -5,7 +5,7 @@
 ## Introducción
 
 Hace unos meses, cuando mi disco externo de ~640 GB (~598 GiB) dejó de funcionar, decidí comprar  almacenamiento en la nube. Después de investigar por varios días, decidí comprar el servicio premium de [Onedrive] (1TiB por 69€/año). Tras hacer esto, pronto me di cuenta de que un disco externo me venía mejor por mi velocidad de Internet (tengo ~3Mb de bajada y ~1Mb de subida). Pero ya que mi disco externo dejó de funcionar porque se me cayó alsuelo, no quería comprarme otro. Entonces, ¿qué opciones tenía? ¿Había un servicio para descargarme cosas  directamente a la nube?
-[Onedrive]: https://live.onedrive.com
+[Onedrive]: https://onedrive.com
 
 ## Offcloud
 

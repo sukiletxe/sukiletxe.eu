@@ -11,7 +11,7 @@
 
 I've been toying with the idea of being a part of the [Indieweb] movement. This movement wants to retain the ownership of the content they produce everywhere, centralicing their identity in their domain. I somewhat agree with this. It's a [fairly complicated thing to do,][kg] and I don't know how I would manage it with [Netlify] and [GitHub.][gitHub] In addition I have some doubts about how would I manage my random replies to tweets, and I've read [a blog post explaining privacy concerns about other people's interactions.][GDPR]
 [Indieweb]: https://indieweb.org
-[Netlify]: https://netlify.org
+[Netlify]: https://netlify.com
 [gitHub]: https://github.com
 [kg]: http://datahiveconsulting.com/2014/04/10/indiewebify-me-and-the-knowledge-gap/
 [GDPR]: https://sebastiangreger.net/2018/05/indieweb-privacy-challenge-webmentions-backfeeds-gdpr/

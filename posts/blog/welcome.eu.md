@@ -6,5 +6,5 @@ Ongi etorri! Ni Sukil Etxenike naiz, eta hau nire bloga da, Interneteko nire txo
 
 Hemen burura etortzen zaidan edozein gauza idatziko dut (seguruenik gehienetan ordenagailuei eta irisgarritasunari buruzko gauzak). Gutxienez ilean behin  idaztea espero dut.  Nolanahi ere, [harpidetu RSS jariora][rss], eta partekatu nire edukia gustatzen bazaizu. Hurrengorarte!
 
-[about]: /eu/about
+[about]: /eu/
 [rss]: /eu/rss.xml

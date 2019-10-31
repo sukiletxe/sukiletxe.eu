@@ -13,7 +13,7 @@
 ## Introduction
 
 A couple of months ago, as my ~640GB (~598 GiB) external drive stopped working, I decided to buy some space in the cloud. After several days of investigation, I decided to purchase the premium package on [Onedrive] (1TiB for 69€/year). After doing this, soon I realised that an external drive was better because of my internet speed (I have a ~3Mb download speed and ~1Mb upload speed). But, seeing as my external drive had stopped working because I dropped it to the floor by accident, I didn't want to buy one. So, what were my options? Was there a service which allowed me to download things directly to the cloud?
-[Onedrive]: https://live.onedrive.com
+[Onedrive]: https://onedrive.com
 
 ## Offcloud
 

@@ -6,5 +6,5 @@
 
 Aquí escribiré lo que sea que me venga a la mente (probablemente más que nada cosas sobre informática y accesibilidad). Espero escribir una vez al mes. En cualquier caso, [subscribíos a la fuente RSS][rss], y compartid mi contenido si os gusta. ¡Hasta la próxima!
 
-[about]: /es/about
+[about]: /es/
 [rss]: /es/rss.xml
