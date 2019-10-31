@@ -1,7 +1,7 @@
 <!--
 .. title: Do I have no generation?
 .. slug: do-i-have-no-generation
-.. date: 2019-11-03 12:00:00+01:00
+.. date: 2019-10-31 20:40:00+01:00
 .. tags: indieweb,meta
 .. category: 
 .. link: 
