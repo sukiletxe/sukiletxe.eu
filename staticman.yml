@@ -4,7 +4,7 @@ comments:
     commitMessage: "Add new comment"
     extension: "wpcomment"
     filename: "{options.slug}-{@timestamp}"
-    format: "frontmatter"
+    format: "yml"
     generatedFields:
         date:
             type: date
