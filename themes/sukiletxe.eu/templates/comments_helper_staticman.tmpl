@@ -3,31 +3,29 @@
 <%def name="comment_form(url, title, identifier)">
     <ol id="staticman-thread">
         % for k in sorted(global_data.keys()):
-            % if k.endswith('.json') or k.endswith('.yaml') or k.endswith('.yml'):
-                % if identifier in k:
-                    <li class="comment">
-                        <div class = "comment-header">
-                            <span class="comment-author">
-                                <b>
-                                    % if not global_data[k].get('author_url', '') == '':
-                                        <a href="${global_data[k]['author_url']}" rel="external nofollow">
-                                    % endif
-                                    % if not global_data[k].get('author', '') == '':
-                                        ${global_data[k]['author']}
-                                    % else:
-                                        ${messages('Anonimous')}
-                                    % endif
-                                    % if not global_data[k].get('author_url', '') == '':
-                                        </a>
-                                    % endif
-                                </b>
-                            </span>
-                            <span>&ndash;</span>
-                            <span class = "comment-date"> <time class="dt-published" datetime=${global_data[k].get('date')}>${global_data[k].get('date')}</time></span>
-                        </div>
-                        <div class="comment-text">${global_data[k].get('content')}</div>
-                    </li>
-                % endif
+            % if remove_path_and_extension(identifier) in k:
+                <li class="comment">
+                    <div class = "comment-header">
+                        <span class="comment-author">
+                            <b>
+                                % if not global_data[k].get('author_url', '') == '':
+                                    <a href="${global_data[k]['author_url']}" rel="external nofollow">
+                                % endif
+                                % if not global_data[k].get('author', '') == '':
+                                    ${global_data[k]['author']}
+                                % else:
+                                    ${messages('Anonimous')}
+                                % endif
+                                % if not global_data[k].get('author_url', '') == '':
+                                    </a>
+                                % endif
+                            </b>
+                        </span>
+                        <span>&ndash;</span>
+                        <span class = "comment-date"> <time class="dt-published" datetime=${global_data[k].get('date')}>${global_data[k].get('date')}</time></span>
+                    </div>
+                    <div class="comment-text">${global_data[k].get('content')}</div>
+                </li>
             % endif
         % endfor
     </ol>

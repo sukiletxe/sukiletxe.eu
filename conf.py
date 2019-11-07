@@ -1411,7 +1411,7 @@ WARN_ABOUT_TAG_METADATA = False
 # Put in global_context things you want available on all your templates.
 # It can be anything, data, functions, modules, etc.
 GLOBAL_CONTEXT = {
-    remove_path_and_extension: remove_path_and_extension.remove_path_and_ext
+    'remove_path_and_extension': remove_path_and_extension.remove_path_and_ext
 }
 
 # Add functions here and they will be called with template
