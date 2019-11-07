@@ -2,7 +2,7 @@ comments:
     allowedFields: ["author", "author_url", "content"]
     branch: "master"
     commitMessage: "Add new comment"
-    extension: 'wpcomment'
+    extension: "wpcomment"
     filename: "{options.slug}-{@timestamp}"
     format: "frontmatter"
     generatedFields:
