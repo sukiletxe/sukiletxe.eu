@@ -2,6 +2,7 @@
 .. title: Phonetic symbols (part 1): reading
 .. slug: phonetic-symbols-part-1-reading
 .. date: 2018-06-05 14:00:00 +02:00
+.. updated: 2019-10-31 22:25:00+01:00
 .. tags: accessibility, Eloquence, Espeak, IOs, JAWS, linguistics, Mac, NVDA, phonetics, Unicode, VoiceOver, Windows, IPA
 .. category: 
 .. link: 
