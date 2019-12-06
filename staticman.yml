@@ -10,5 +10,6 @@ comments:
     moderation: true
     path: "data/posts"
     requiredFields: ["content"]
-    transforms:
-        content: "frontmatterContent"
+    # Only set this if "frontmatter" format is used
+    # transforms:
+        # content: "frontmatterContent"
